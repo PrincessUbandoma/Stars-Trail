@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: teal;
+    overflow: hidden;
+  }
+  
+  span {
+    background: url("https://cdn0.iconfinder.com/data/icons/Hand_Drawn_Web_Icon_Set/128/stars.png");
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    Background-size:cover;
+    transform: translate(-50%, -50%);
+    animation: animate 6s linear;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+      filter: hue-rotate(0);
+    }
+    100% {
+      transform: translate(-50%, -5000%);
+      opacity: 0;
+      filter: hue-rotate(720deg);
+    }
+  }
